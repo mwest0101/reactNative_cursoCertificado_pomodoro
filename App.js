@@ -23,7 +23,7 @@ export default function App() {
     console.log(currentTime);
 
     return (
-        <SafeAreaView style={styles.container}>
+        <SafeAreaView style={[styles.container, {backgroundColor: colors[currentTime] }]}>
             <View style={{ paddingTop: Platform.OS === "android" && 30 }}>
                 <Text style={styles.text}>Pomodoro</Text>
                 <Text style={styles.text}>{time}</Text>
