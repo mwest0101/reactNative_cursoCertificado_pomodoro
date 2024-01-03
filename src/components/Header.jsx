@@ -17,9 +17,7 @@ export default function Header({currentTime,setCurrentTime, setTime}){
             onPress={() => handlePress(index)}
             style={[styles.itemStyles,currentTime!==index && {borderColor:"transparent"}]}
             >
-                <Text>
-                    {item}
-                </Text>
+                <Text style={{fontWeight:'bold'}}>{item}</Text>
             </TouchableOpacity>
         ))}
         {/* <Text>{time}</Text> */}
@@ -30,6 +28,11 @@ export default function Header({currentTime,setCurrentTime, setTime}){
 const styles=StyleSheet.create({
     itemStyles:{
         width: "33%",
+        alignItems:"center",
+        borderWidth:3,
+        padding:5,
+        borderRadius:10,
+        borderColor:"white",
         borderWidth: 3,
         padding:5,
     }
