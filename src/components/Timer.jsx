@@ -1,10 +1,10 @@
 import { View,Text,TouchableOpacity,StyleSheet } from "react-native"
 
 export default function Timer({time}){
-  
+   const formattedTime = `${Math.floor(time/60).toString().padStart(2,"0")}`
    return(
       <View style={styles.container}>
-         <Text style={styles.time}>{time}</Text>
+         <Text style={styles.time}>{formattedTime}</Text>
       </View>
 
    );
