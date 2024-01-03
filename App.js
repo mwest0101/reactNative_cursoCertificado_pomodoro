@@ -28,7 +28,8 @@ export default function App() {
             <View style={{ 
                 flex:1,
                 paddingHorizontal:15,
-                paddingTop: Platform.OS === "android" && 30 
+                paddingTop: Platform.OS === "android" && 30,
+                borderWidth:3, 
                 }}
             >
                 <Text style={styles.text}>Pomodoro</Text>
@@ -47,9 +48,8 @@ export default function App() {
 
 const styles = StyleSheet.create({
     container: {
-        flex: 1,
-       
-        backgroundColor: "#fff",
+        flex: 1,       
+        // backgroundColor: "#fff",
         // alignItems: 'center',
         // justifyContent: 'center',
     },

@@ -13,12 +13,13 @@ export default function Timer({time}){
 
 const styles = StyleSheet.create({
    container: {
-      flex:.3,
+      flex:0.3,
       justifyContent:"center",
       backgroundColor:"#F2F2F2",
-      borderRadius:15,
       padding:15,
-      textAlign:"center",
+      borderRadius:15,
+    
+      
 
    },
    time:{
