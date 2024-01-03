@@ -11,7 +11,7 @@ import { useState } from "react";
 import Header from "./src/components/Header";
 /*
 tiempo de cursado desde el video:
-1:18:40
+1:19:25
 
 */
 const colors = ["#F7DC6F", "#A2D9CE", "#D7BDE2"];
@@ -27,7 +27,6 @@ export default function App() {
             <View style={{ paddingTop: Platform.OS === "android" && 30 }}>
                 <Text style={styles.text}>Pomodoro</Text>
                 <Text style={styles.text}>{time}</Text>
-
                 <Header
                     currentTime={currentTime}
                     setCurrentTime={setCurrentTime}
