@@ -32,7 +32,7 @@ export default function App() {
         if(isActive){
             interval=setInterval(()=>{
                 setTime(time -1);
-            }, 1000);
+            }, 10);
         }else{
             clearInterval(interval);
         }
@@ -41,7 +41,7 @@ export default function App() {
             setIsWorking(!isWorking);
             setTime(isWorking ? 300 : 1500);
         }
-
+        
         return()=>clearInterval(interval);
 
     },[isActive,time]);
